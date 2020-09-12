@@ -54,7 +54,8 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
         <div>
           <Typography variant="h5" component="span" color="primary">COVID19</Typography>
           <th />
-          <Typography variant="h6" component="span" color="primary">Painel Coronavírus</Typography><br />
+          <Typography variant="h6" component="span" color="primary">Painel Coronavírus</Typography>
+          <tr />
           <Typography variant="body2" component="span" color="error">Atualizado em: {updateAt}</Typography>
           <div className="pt-2">
             <Select onChange={onChange} value={country}>
