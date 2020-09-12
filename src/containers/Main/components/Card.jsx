@@ -1,5 +1,5 @@
 import React, { memo } from 'react'
-import { Card as CardUI, Skeleton } from '../../../components'
+import { Card as CardUI } from '../../../components'
 import {
   LabelStyled,
   ValueStyled,
