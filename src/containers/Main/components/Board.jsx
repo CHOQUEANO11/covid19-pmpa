@@ -1,6 +1,7 @@
 import React, { memo } from 'react'
 import { Grid, Skeleton } from '../../../components'
-import Card from './Card'
+import Card from './Card';
+// import {Skeleton} from '../../../components/Skeleton';
 
 function Board({ data }) {
   const { cases, todayDeaths, recovered, deaths, todayCases } = data
@@ -19,7 +20,7 @@ function Board({ data }) {
         <Card value={getValue(todayCases)} label="Casos hoje" color="#000" />
       </Grid>
       <Grid item xs={12} md={3}>
-        <Card value={getValue(deaths)} label="Total de mortos" color="#E95078" />
+        <Card value={getValue(deaths)} colorLabel="red" label="Total de mortos" color="#E95078" />
       </Grid>
       <Grid item xs={12} md={3}>
         <Card value={getValue(recovered)} label="Total de recuperados" color="#67C887" />

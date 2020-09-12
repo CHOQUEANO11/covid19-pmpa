@@ -1,5 +1,5 @@
 import React, { memo } from 'react'
-import { Card, Typography, Button, Select, MenuItem } from '../../../components'
+import { Card, Typography, Button, Select, MenuItem, Skeleton } from '../../../components'
 import COUNTRIES from '../../../commons/constants/countries'
 import { CardPanelContentStyled, ItemStyled } from './style'
 
@@ -49,11 +49,13 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
 
   return (
     <Card>
+      <Skeleton variant="text" width="100%" height={30} />
       <CardPanelContentStyled>
         <div>
           <Typography variant="h5" component="span" color="primary">COVID19</Typography>
-          <Typography variant="h6" component="span" color="primary">Painel Coronavírus</Typography>
-          <Typography variant="body2" component="span" color="primary">Atualizado em: {updateAt}</Typography>
+          <th />
+          <Typography variant="h6" component="span" color="primary">Painel Coronavírus</Typography><br />
+          <Typography variant="body2" component="span" color="error">Atualizado em: {updateAt}</Typography>
           <div className="pt-2">
             <Select onChange={onChange} value={country}>
               {COUNTRIES.map(renderCountries)}

@@ -1,5 +1,5 @@
 import React, { memo } from 'react'
-import { Card as CardUI } from '../../../components'
+import { Card as CardUI, Skeleton } from '../../../components'
 import {
   LabelStyled,
   ValueStyled,
@@ -10,8 +10,13 @@ function Card({ value, label, color }) {
   return (
     <CardUI>
       <CardContentStyled color={color}>
-        <ValueStyled>{value}</ValueStyled>
-        <LabelStyled>{label}</LabelStyled>
+        <ValueStyled>
+       
+          {value}</ValueStyled>
+        <LabelStyled>
+       
+          {label}</LabelStyled>
+
       </CardContentStyled>
     </CardUI>
   )
