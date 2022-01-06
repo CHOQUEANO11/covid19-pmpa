@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
      name: dev
-     url: 'http://www.pm.pa.gov.br'
+     url: 'https://covid19-pmpa.vercel.app/'
     needs: build
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
      name: prod
-     url: 'http://www.pm.pa.gov.br'
+     url: 'https://covid19-pmpa.vercel.app/r'
     needs: deploy-dev
 
     # Steps represent a sequence of tasks that will be executed as part of the job
