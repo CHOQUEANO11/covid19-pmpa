@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
      name: dev
-     url: 'pm.pa.gov.br'
+     url: 'http://www.pm.pa.gov.br'
     needs: build
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
      name: prod
-     url: 'pm.pa.gov.br'
+     url: 'http://www.pm.pa.gov.br'
     needs: deploy-dev
 
     # Steps represent a sequence of tasks that will be executed as part of the job
